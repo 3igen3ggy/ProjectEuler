@@ -1,3 +1,5 @@
+package exercises;
+
 public class Ex2 {
     public int solve() {
         int sum = 0;

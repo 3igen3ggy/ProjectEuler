@@ -1,3 +1,5 @@
+package exercises;
+
 public class Ex3 {
     public long solve() {
         long a = 600851475143L;

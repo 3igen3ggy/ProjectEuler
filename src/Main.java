@@ -1,3 +1,5 @@
+import exercises.Ex3;
+
 public class Main {
     public static void main(String[] args) {
         Ex3 ex = new Ex3();
