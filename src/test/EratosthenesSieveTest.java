@@ -19,7 +19,7 @@ public class EratosthenesSieveTest {
         if (countPassed == totalTests) System.out.println("TEST PASSED!");
         else System.out.println("TEST FAILED");
     }
-    public static void EratosthenesSieveTestCount(int n, int sol) {
+    public void EratosthenesSieveTestCount(int n, int sol) {
         totalTests++;
         int counter = 0;
 
