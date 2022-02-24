@@ -9,7 +9,6 @@ public class Ex50 {
         int maxSum = 0;
         int maxCounter = 0;
         boolean[] sieve = Sieve(n);
-
         ArrayList<Integer> primesList = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             if (sieve[i]) primesList.add(i);
@@ -23,7 +22,7 @@ public class Ex50 {
                 sum += primesList.get(j);
                 counter++;
                 if (sum > n) break;
-                if (counter > maxCounter) {
+                if (counter > maxCounter && sieve[sum]) {
                     maxCounter = counter;
                     maxSum = sum;
                 }
