@@ -1,15 +1,13 @@
 
-import exercises.Ex2;
-import exercises.Ex3;
-import exercises.Ex4;
-import test.EratosthenesSieveTest;
-import test.isPalindromeTest;
-import test.isPrimeTest;
-import utilities.EratosthenesSieve;
+import exercises.*;
+import test.*;
+import utilities.*;
 
 public class Main {
     public static void main(String[] args) {
-        Ex2 ex = new Ex2();
+//        isPandigitalTest ipt = new isPandigitalTest();
+        Ex97 ex = new Ex97();
+//        ex.solve();
         System.out.println(ex.solve());
     }
 }
