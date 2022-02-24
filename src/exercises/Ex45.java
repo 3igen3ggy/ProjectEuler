@@ -2,7 +2,7 @@ package exercises;
 
 public class Ex45 {
     public static long solve() {
-        for (long i = 40755l; i < 10000000000l; i++) {
+        for (long i = 285L; i < 10000000000L; i++) {
             long hex = i * (2 * i - 1);
             if (isTriangle(hex) && isPentagonal(hex)) {
                 return hex;
@@ -12,8 +12,7 @@ public class Ex45 {
     }
 
     public static boolean isWhole(double i) {
-        if ((int) i == i) return true;
-        return false;
+        return (int) i == i;
     }
 
     //looking only for positive natural number, else: -1
@@ -29,19 +28,16 @@ public class Ex45 {
 
     public static boolean isTriangle(long a) {
         double sol = solveQuadratic(0.5, 0.5, -a);
-        if (isWhole(sol) && sol != -1) return true;
-        return false;
+        return isWhole(sol) && sol != -1;
     }
 
     public static boolean isPentagonal(long a) {
         double sol = solveQuadratic(1.5, -0.5, -a);
-        if (isWhole(sol) && sol != -1) return true;
-        return false;
+        return isWhole(sol) && sol != -1;
     }
 
     public static boolean isHexagonal(long a) {
         double sol = solveQuadratic(2, -1, -a);
-        if (isWhole(sol) && sol != -1) return true;
-        return false;
+        return isWhole(sol) && sol != -1;
     }
 }
